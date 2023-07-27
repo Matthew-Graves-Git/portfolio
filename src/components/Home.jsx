@@ -13,7 +13,7 @@ const Home = () => {
                     </h2>
                     <p className=' text-gray-500 py-4 max-w-md'>
                         I have spent the past 3 years building and designing software solutions.
-                        I specialize in web applications technologies: React, Tailwind, Node Js and SpringBoot
+                        I specialize in web applications technologies: React, Tailwind, Node Js, and SpringBoot
                     </p>
                     <div>
                         <button className='group w-fit px-6 py-3 my-2 
