@@ -10,3 +10,11 @@
         font-family: 'Raleway', sans-serif;
     }
 }
+
+@layer components {
+    .slant{
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+          margin-bottom: -10vw;
+    }
+}

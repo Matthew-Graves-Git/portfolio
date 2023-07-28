@@ -12,7 +12,7 @@ const SocialLinks = () => {
             <FaLinkedin size={30}/>
             </>
             ),
-            href:'',
+            href:'https://www.linkedin.com/in/matthew-graves-29a3b0285',
             style: 'rounded-tr-md'
         },
         {
@@ -22,7 +22,7 @@ const SocialLinks = () => {
             <FaGithub size={30}/>
             </>
             ),
-            href:'',
+            href:'https://github.com/Matthew-Graves-Git',
         },
         {
             child:(
@@ -40,24 +40,31 @@ const SocialLinks = () => {
             <BsFillPersonLinesFill size={30}/>
             </>
             ),
-            href:'/matthew-graves-resume.pdf',
+            href:'/Matthew-Graves-Resume.pdf',
             style: 'rounded-br-md',
             download:true
         },
     ]
 
     return (
-        <div className='flex flex-col top-[35%] left-0 fixed'>
+        <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
             <ul>
-                { socials.map(({key},index)=>{
-                    <li className='flex justify-between items-center
-                 w-40 h-14 px-4 ml-[-100px] hover:rounded-md duration-300 hover:ml-[-10px] bg-gray-500'>
-                        <a href=""
+                { socials.map(({child,href,style,download},index)=>{
+                    return(
+                    <li
+                    key={index} 
+                    className={`flex justify-between items-center
+                 w-40 h-14 px-4 ml-[-100px] hover:rounded-md duration-300 hover:ml-[-10px] bg-gray-500 ${style}`}>
+                        <a href={href}
                         className='flex justify-between items-center w-full text-white'
-                        >    
+                        download={download}
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                            {child}    
                         </a>
                     </li>
-                })
+                )})
                 
                 }
             </ul>
