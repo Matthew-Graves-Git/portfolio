@@ -8,10 +8,10 @@ const Home = () => {
             <div className='max-w-screen-lg mx-auto flex flex-col 
             items-center justify-center h-full px-4 text-white md:flex-row'>
                 <div className='flex flex-col justify-center h-full'>
-                    <h2 className='text-4xl sm:text-7xl font-bold'>
+                    <h2 className='animate-fade text-4xl sm:text-7xl font-bold'>
                         Hello, I'm Matthew Graves
                     </h2>
-                    <p className=' text-xl font-semibold sm:text-4xl text-cyan-500 py-4 max-w-md'>
+                    <p className=' animate-text text-xl font-semibold sm:text-4xl text-cyan-500 py-4 max-w-md'>
                         Full Stack Developer
                     </p>
                     <p className=' text-gray-500 py-4 max-w-md'>
