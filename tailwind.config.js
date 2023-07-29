@@ -10,7 +10,7 @@ module.exports = {
     },
     animation: {
       text: 'text 7s ease infinite',
-      fade: 'fadeOut 5s ease-out'
+      fade: 'fadeOut 1s'
     },
     keyframes: {
       text: {
@@ -25,15 +25,12 @@ module.exports = {
         }
       },
       fadeOut:{
-        '25%': {
-          transform: 'translateX(-50%)',
+        '0%': {
+          transform: 'translateX(-15px)',
+          transitition:'opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1)',
           opacity: 0
         },
-        '50%': {
-          transform: 'translateX(-25%)',
-          opacity: 0.5
-        },
-        '75%': {
+        '100%': {
           transform: 'translateX(0)',
           opacity: 1
         }

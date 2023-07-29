@@ -11,15 +11,15 @@ const Home = () => {
                     <h2 className='animate-fade text-4xl sm:text-7xl font-bold'>
                         Hello, I'm Matthew Graves
                     </h2>
-                    <p className=' animate-text text-xl font-semibold sm:text-4xl text-cyan-500 py-4 max-w-md'>
+                    <p className='fade-left animate-text text-xl font-semibold sm:text-4xl text-cyan-500 py-4 max-w-md'>
                         Full Stack Developer
                     </p>
-                    <p className=' text-gray-500 py-4 max-w-md'>
+                    <p className='fade-left text-gray-500 py-4 max-w-md'>
                         I have spent the past 3 years building and designing software solutions.
                         I specialize in web applications technologies: React, Tailwind, Node Js, and SpringBoot
                     </p>
                     <div>
-                        <button className='group w-fit px-6 py-3 my-3 
+                        <button className='group fade-left w-fit px-6 py-3 my-3 
                         flex items-center rounded-md 
                         bg-gradient-to-r from-purple-500 to-blue-500 cursor-pointer'>
                             Portfolio 
