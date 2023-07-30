@@ -1,5 +1,6 @@
 import React from 'react';
 import {MdKeyboardArrowRight} from 'react-icons/md';
+import { Link } from "react-scroll";
 
 
 const Home = () => {
@@ -19,14 +20,18 @@ const Home = () => {
                         I specialize in web applications technologies: React, Tailwind, Node Js, and SpringBoot
                     </p>
                     <div>
-                        <button className='group fade-left w-fit px-6 py-3 my-3 
+                        <Link
+                        to='Portfolio'
+                        smooth
+                        duration={500} 
+                        className='group fade-left w-fit px-6 py-3 my-3 
                         flex items-center rounded-md 
                         bg-gradient-to-r from-purple-500 to-blue-500 cursor-pointer'>
                             Portfolio 
                             <span className='ml-1 group-hover:rotate-90 duration-300'>
                                 <MdKeyboardArrowRight size={25}/>
                             </span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
