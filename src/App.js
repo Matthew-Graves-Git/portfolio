@@ -11,10 +11,9 @@ function App() {
   const fadeinElements = document.querySelectorAll('.fade-left');
 
   useEffect(() => {
-    console.log(fadeinElements)
     const observer = new IntersectionObserver((entries) =>{
       entries.forEach((entry) =>{
-        if(entry.isIntersecting) {
+        if(entry.isIntersecting) { 
           entry.target.classList.add('animate-fade')
         }else{
           entry.target.classList.remove('animate-fade')
