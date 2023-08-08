@@ -14,10 +14,10 @@ const Navbar = () => {
         link:"About"
     },
     {
-        link:"Experience"
+        link:"Portfolio"
     },
     {
-        link:"Contact"
+        link:"Experience"
     },
     ]
 

@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import SocialLinks from "./components/SocialLinks";
 import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
     <About/>
     <Portfolio/>
     <Experience/>
+    <Footer/>
     </div>
   );
 }
