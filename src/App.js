@@ -23,8 +23,7 @@ function App() {
     })
     fadeinElements.forEach(el => observer.observe(el));
   },[fadeinElements]);
-
-
+ 
   return (
     <div>
     <Navbar/>
@@ -35,6 +34,7 @@ function App() {
     <Experience/>
     <Footer/>
     </div>
+  
   );
 }
 

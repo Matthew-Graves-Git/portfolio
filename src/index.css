@@ -44,4 +44,9 @@
         --tw-bg-opacity: 1;
         background-color: rgb(23 28 71 / var(--tw-bg-opacity));
     }
+    .slot {
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+      
 }
