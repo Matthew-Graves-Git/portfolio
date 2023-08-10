@@ -34,8 +34,7 @@ function App() {
     <Experience/>
     <Footer/>
     </div>
-  
-  );
+  ); 
 }
 
 export default App;

@@ -36,8 +36,8 @@ const Footer = () => {
 
     return (
     <div className="h-full w-screen flex-col justify-center items-center bg-gray-800 text-white">
-            <div className='flex justify-center items-center mb-4 md:mb-2'>
-            <Link to={'Home'} smooth duration={500}>
+            <div className='flex h-10 justify-center items-center bg-black'>
+            <Link to={'Home'} smooth duration={500} className='w-10'>
                 <MdOutlineKeyboardDoubleArrowUp className=' bg-cyan-800 absolute hover:scale-105 duration-200 ' size={40}/>
             </Link>
             </div>
