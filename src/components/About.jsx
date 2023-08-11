@@ -1,9 +1,16 @@
-import React from "react";
 import dev from '../assets/backgroundDev.png';
+import { useInView } from "../hooks/useInView";
 
-const About = () => {
+const About = (props) => {
+
+// create custom hook, look into forward ref;
+
+const ref = useInView('.fade-left','animate-fade');
+
+
   return (
     <div
+      ref={ref}
       name="About"
       className="h-screen w-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
@@ -16,7 +23,7 @@ const About = () => {
         </div>
         <div className="grid grid-flow-col-dense items-center">
         <div>
-        <p className="fade-left text-2xl lg:text-xl mt-10">
+        <p className="fade-left text-lg md:text-xl mt-10">
         My name is Matthew Graves, I am a full stack software developer, and am currently
         finishing my degree in computer science at Oakland University. 
         Throughout the past few years, I have been dedicated to learning 
@@ -26,7 +33,7 @@ const About = () => {
 
         <br />
 
-        <p className="fade-left text-2xl lg:text-xl">
+        <p className="fade-left text-lg md:text-xl">
         I pride myself in my attention to detail and focus on creating clean, stable and efficient
          software solutions with a focus on responsive design, accessibility, and performance.
 

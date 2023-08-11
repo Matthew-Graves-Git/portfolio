@@ -18,7 +18,16 @@
           -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
           margin-bottom: -10vw;
     }
-    .fade-left{}
+    .fade-left{
+        transform: translateX(-15px);
+        transition: opacity .6s,transform .6s;
+        opacity: 0;
+    }
+    .animate-fade{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
 
     .bg-alternatives-secondary-dark-light {
         --tw-bg-opacity: 1;

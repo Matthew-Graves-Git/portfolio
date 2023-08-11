@@ -4,8 +4,10 @@ import{FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import {MdOutlineKeyboardDoubleArrowUp} from 'react-icons/md';
+import { useInView } from '../hooks/useInView';
 
 const Footer = () => {
+    const ref = useInView('.fade-left','animate-fade');
     const socials = [
         {
             child:(
@@ -35,7 +37,7 @@ const Footer = () => {
     ]
 
     return (
-    <div className="h-full w-screen flex-col justify-center items-center bg-gray-800 text-white">
+    <div ref={ref} className="h-full w-screen flex-col justify-center items-center bg-gray-800 text-white">
             <div className='flex h-10 justify-center items-center bg-black'>
             <Link to={'Home'} smooth duration={500} className='w-10'>
                 <MdOutlineKeyboardDoubleArrowUp className=' bg-cyan-800 absolute hover:scale-105 duration-200 ' size={40}/>
