@@ -7,7 +7,7 @@ import { useInView } from '../hooks/useInView';
 const Home = () => {
     const ref = useInView('.fade-left','animate-fade');
     return (  
-        <div ref={ref} name="Home" className='h-screen w-screen bg-gradient-to-b from-black to-gray-800'>
+        <div ref={ref} name="Home" className='h-[95vh] w-screen bg-gradient-to-b from-black to-gray-800'>
             <div className='max-w-screen-lg mx-auto flex flex-col 
             items-center justify-center h-full px-4 text-white md:flex-row'>
                 <div className='flex flex-col justify-center h-full'>

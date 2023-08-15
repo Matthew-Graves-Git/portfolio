@@ -25,7 +25,7 @@ const Card = (props) => {
                                         </button>
                                                                             </div>
                                     <div className="flex rounded overflow-y-auto bg-alternatives-box-darker slot-12-img">
-                                        <img className='h-[40vh] md:h-[45vh]' src={props.info.src} alt={props.info.title} />
+                                        <img className='h-[35vh] md:h-[45vh]' src={props.info.src} alt={props.info.title} />
                                     </div>
                                     <div className="mt-4 flex flex-wrap -mx-2">
                                         <div className="w-full md:w-1/2 mb-2 md:mb-0 px-2">
