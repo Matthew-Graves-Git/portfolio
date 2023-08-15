@@ -17,15 +17,20 @@ const Card = (props) => {
                                                 <img src="/vendor/shuffle/img/alternatives/alert.svg" alt=""/>
                                             </div>
                                         </div>
-                                        <button data-action="click-slot" data-label="zip" className="flex items-center justify-center px-3 py-3 w-full sm:w-auto bg-alternatives-secondary-dark-light hover:bg-alternatives-secondary-dark text-white text-sm leading-none font-semibold border border-alternatives-border rounded focus:outline-none">
+                                        <a 
+                        href='/'
+                        download={props.info.download}
+                        target='_blank'
+                        rel='noreferrer'
+                        className="flex items-center justify-center px-3 py-3 w-full sm:w-auto bg-alternatives-secondary-dark-light hover:bg-alternatives-secondary-dark text-white text-sm leading-none font-semibold border border-alternatives-border rounded focus:outline-none">
                                             <svg className="mr-1 text-alternatives-box-light" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M11.3346 6.00016V4.66683C11.3346 2.80016 9.86797 1.3335 8.0013 1.3335C6.13464 1.3335 4.66797 2.80016 4.66797 4.66683V6.00016C3.53464 6.00016 2.66797 6.86683 2.66797 8.00016V12.6668C2.66797 13.8002 3.53464 14.6668 4.66797 14.6668H11.3346C12.468 14.6668 13.3346 13.8002 13.3346 12.6668V8.00016C13.3346 6.86683 12.468 6.00016 11.3346 6.00016ZM6.0013 4.66683C6.0013 3.5335 6.86797 2.66683 8.0013 2.66683C9.13464 2.66683 10.0013 3.5335 10.0013 4.66683V6.00016H6.0013V4.66683Z" fill="currentColor"></path>
                                             </svg>
                                             Download ZIP
-                                        </button>
+                                        </a>
                                                                             </div>
                                     <div className="flex rounded overflow-y-auto bg-alternatives-box-darker slot-12-img">
-                                        <img className='h-[35vh] md:h-[45vh]' src={props.info.src} alt={props.info.title} />
+                                        <img className='h-[35vh] md:h-[40vh]' src={props.info.src} alt={props.info.title} />
                                     </div>
                                     <div className="mt-4 flex flex-wrap -mx-2">
                                         <div className="w-full md:w-1/2 mb-2 md:mb-0 px-2">
@@ -36,9 +41,9 @@ const Card = (props) => {
                                         </div>
                                         <div className="w-full md:w-1/2 px-2">
                                                 <div className="inner hidden"></div>
-                                                <a href={props.info.link} className="w-full flex items-center justify-center px-3 py-2 bg-brand-blue hover:bg-blue-700 text-white text-sm font-semibold border border-alternatives-border rounded focus:outline-none" target='_blank' rel='noreferrer'>
+                                                {props.info.link && <a href={props.info.link} className="w-full flex items-center justify-center px-3 py-2 bg-brand-blue hover:bg-blue-700 text-white text-sm font-semibold border border-alternatives-border rounded focus:outline-none" target='_blank' rel='noreferrer'>
                                                     View Demo
-                                                </a>
+                                                </a>}
                                         </div>
                                     </div>
                                 </div>

@@ -14,21 +14,22 @@ const Portfolio = () => {
       title:"Portfolio",
       border: "border-cyan-800",
       link:"#",
-      code:"https://github.com/Matthew-Graves-Git/portfolio"
+      code:"https://github.com/Matthew-Graves-Git/portfolio",
+      download:'https://github.com/Matthew-Graves-Git/portfolio/archive/refs/heads/master.zip'
     },
     {
       src:sorting,
       title:"Sorting Visualizer",
       border: "border-cyan-800",
-      link:"#",
-      code:"https://github.com/Matthew-Graves-Git/Sorting-Visualizer"
+      code:"https://github.com/Matthew-Graves-Git/Sorting-Visualizer",
+      download:'https://github.com/Matthew-Graves-Git/Sorting-Visualizer/archive/refs/heads/master.zip'
     },
     {
       src:resourcify,
       title:"Resourcify",
       border: "border-red-800",
-      link:"#",
-      code:"https://github.com/Matthew-Graves-Git/ou_resource_manager"
+      code:"https://github.com/Matthew-Graves-Git/ou_resource_manager",
+      download:'https://github.com/Matthew-Graves-Git/ou_resource_manager/archive/refs/heads/master.zip'
     },
     
 ]
