@@ -10,24 +10,28 @@ const Footer = () => {
     const ref = useInView('.fade-left','animate-fade');
     const socials = [
         {
+            name:'LinkedIn',   
             child:(
             <FaLinkedin size={30}/>
             ),
             href:'https://www.linkedin.com/in/matthew-graves-29a3b0285',
         },
         {
+            name:'Github', 
             child:(
             <FaGithub size={30}/>
             ),
             href:'https://github.com/Matthew-Graves-Git',
         },
         {
+            name:'Email', 
             child:(
             <HiOutlineMail size={30}/>
             ),
             href:'mailto:matthew.graves.cs@gmail.com',
         },
         {
+            name:'Resume', 
             child:(
             <BsFillPersonLinesFill size={30}/>
             ),
@@ -44,13 +48,15 @@ const Footer = () => {
             </Link>
             </div>
             <ul className='flex h-full w-screen justify-evenly items-center bg-gray-800 text-white'>
-                { socials.map(({child,href,download},index)=>{
+                { socials.map(({child,href,download,name},index)=>{
                     return(
                     <li
                     key={index} 
                     className={`
                   h-16 px-4 mt-4 flex fade-left justify-between items-center bg-black rounded-full hover:scale-105 duration-200 `}>
-                        <a href={href}
+                        <a
+                        aria-label={name} 
+                        href={href}
                         className='text-white'
                         download={download}
                         target='_blank'
@@ -61,7 +67,7 @@ const Footer = () => {
                     </li>
                 )})}
             </ul>
-            <p className='text-sm mt-2 justify-center items-center flex'> © 2023 Matthew Graves</p>
+            <p className='text-sm mt-2 italic justify-center items-center flex'> © 2023 Matthew Graves</p>
     </div>
     );
 }

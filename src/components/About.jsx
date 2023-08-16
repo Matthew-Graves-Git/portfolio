@@ -23,7 +23,7 @@ const ref = useInView('.fade-left','animate-fade');
         </div>
         <div className="grid grid-flow-col-dense items-center pb-10">
         <div>
-        <p className="fade-left text-md md:text-lg lg:text-xl mt-10">
+        <p className="fade-left font-medium text-lg lg:text-xl mt-10">
         My name is Matthew Graves, I am a full stack software developer, and am currently
         finishing my degree in computer science at Oakland University. 
         Throughout the past few years, I have been dedicated to learning 
@@ -33,7 +33,7 @@ const ref = useInView('.fade-left','animate-fade');
 
         <br />
 
-        <p className="fade-left text-md md:text-lg lg:text-xl">
+        <p className="fade-left font-medium text-lg lg:text-xl">
         I pride myself in my attention to detail and focus on creating clean, stable and efficient
          software solutions with a focus on responsive design, accessibility, and performance.
 

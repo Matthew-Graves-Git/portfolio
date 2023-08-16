@@ -14,7 +14,6 @@ const Card = (props) => {
                                                     <div className="z-50 absolute w-5 h-2 ml-8 bottom-0 left-0 bg-alternatives-secondary-dark-dark"></div>
                                                     Sorry, this library doesn't have <span className=" text-red-500"></span> components.
                                                 </div>
-                                                <img src="/vendor/shuffle/img/alternatives/alert.svg" alt=""/>
                                             </div>
                                         </div>
                                         <a 
